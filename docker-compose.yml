@@ -1,9 +1,9 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  nginx:
+  pagina_solance:
     image: nginx:alpine
-    container_name: solance_residences_web
+    container_name: pagina_solance
     ports:
       - "3020:80"
     volumes:
