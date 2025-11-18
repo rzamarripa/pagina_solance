@@ -5,7 +5,7 @@ services:
     image: nginx:alpine
     container_name: pagina_solance
     ports:
-      - "3020:80"
+      - "3007:3000"
     volumes:
       - ./:/usr/share/nginx/html:ro
     restart: unless-stopped
