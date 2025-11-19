@@ -5,7 +5,7 @@ services:
     build: ./api
     container_name: solance_api
     ports:
-      - "3000:3000"
+      - "3008:3000"
     environment:
       - PORT=3000
       - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
