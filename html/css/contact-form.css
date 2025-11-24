@@ -1,0 +1,96 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Alert messages */
+.alert {
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Contact form overlay - mínimo CSS necesario */
+.contact-form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.contact-form-overlay .container,
+.contact-form-overlay .display-table,
+.contact-form-overlay .display-table-cell {
+  height: 100%;
+}
+
+.contact-form-overlay .container {
+  padding-right: 0;
+}
+
+.contact-form-overlay .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-form-overlay .col-6 {
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+.contact-form-overlay .bg-black-opacity-light {
+  width: 300px;
+  margin-left: auto;
+  margin-right: 0;
+  pointer-events: all;
+}
+
+.contact-form-overlay form {
+  pointer-events: all;
+}
+
+.slider-fade {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .contact-form-overlay .col-6 {
+    padding-right: 15px;
+  }
+  .contact-form-overlay .bg-black-opacity-light {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form-overlay .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .contact-form-overlay .offset-6 {
+    margin-left: 0;
+  }
+  .contact-form-overlay .container {
+    padding-right: 15px;
+  }
+}
+
+

@@ -65,46 +65,6 @@
         color: #721c24;
         border: 1px solid #f5c6cb;
       }
-      /* Formulario fijo sobre el carrusel */
-      .contact-form-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
-        pointer-events: none;
-      }
-      .contact-form-overlay .container,
-      .contact-form-overlay .display-table,
-      .contact-form-overlay .display-table-cell {
-        height: 100%;
-      }
-      .contact-form-overlay .row {
-        margin-right: 0;
-      }
-      .contact-form-overlay .col-lg-5 {
-        padding-right: 0;
-        margin-right: -120px;
-      }
-      @media (min-width: 992px) {
-        .contact-form-overlay .col-lg-5 {
-          margin-right: -120px;
-        }
-      }
-      @media (max-width: 991px) {
-        .contact-form-overlay .col-lg-5 {
-          margin-right: 0;
-        }
-      }
-      .contact-form-overlay form,
-      .contact-form-overlay .bg-black-opacity-light {
-        pointer-events: all;
-      }
-      .slider-fade {
-        position: relative;
-        z-index: 1;
-      }
     </style>
   </head>
 
@@ -206,116 +166,6 @@
 
       <!-- start banner -->
       <div class="full-screen position-relative" id="contact">
-        <!-- Formulario fijo sobre el carrusel -->
-        <div class="contact-form-overlay">
-          <div class="container h-100">
-            <div class="display-table h-100">
-              <div class="display-table-cell vertical-align-middle">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6"></div>
-                  <div class="col-lg-6 col-md-6">
-                    <div
-                      class="bg-black-opacity-light padding-20px-all border-radius-5"
-                    >
-                      <h5 class="text-white text-center">
-                        Just steps from your home
-                      </h5>
-                      <p
-                        class="text-white text-center font-size14 margin-30px-bottom"
-                      >
-                        Leave us your information
-                      </p>
-                      <form id="contactForm" class="contact-form">
-                        <div
-                          id="formMessage"
-                          class="alert"
-                          style="display: none; margin-bottom: 20px"
-                        ></div>
-                        <div class="form-group margin-20px-bottom">
-                          <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            class="form-control"
-                            placeholder="Name:"
-                            required
-                          />
-                        </div>
-                        <div class="form-group margin-20px-bottom">
-                          <input
-                            type="text"
-                            name="lastName"
-                            id="lastName"
-                            class="form-control"
-                            placeholder="Last name:"
-                            required
-                          />
-                        </div>
-                        <div class="form-group margin-20px-bottom">
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="form-control"
-                            placeholder="Mail:"
-                            required
-                          />
-                        </div>
-                        <div class="form-group margin-20px-bottom">
-                          <input
-                            type="tel"
-                            name="phone"
-                            id="phone"
-                            class="form-control"
-                            placeholder="Phone:"
-                            required
-                          />
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group margin-20px-bottom">
-                              <input
-                                type="text"
-                                name="country"
-                                id="country"
-                                class="form-control"
-                                placeholder="Country:"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group margin-20px-bottom">
-                              <input
-                                type="text"
-                                name="state"
-                                id="state"
-                                class="form-control"
-                                placeholder="State:"
-                                required
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <p class="text-white font-size12 line-height-22">
-                          This information will only be used to contact you and
-                          follow up on your request for your future residence in
-                          Cabo San Lucas beach.
-                        </p>
-                        <button type="submit" class="butn theme width-100">
-                          <span
-                            >Send
-                            <i class="fas fa-check-circle margin-5px-left"></i
-                          ></span>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="slider-fade">
           <div class="owl-carousel owl-theme width-100">
             <div
@@ -350,6 +200,106 @@
                           </a>
                         </div>
                       </div>
+                      <div class="col-lg-5 offset-lg-1 col-md-6">
+                        <div
+                          class="bg-black-opacity-light padding-40px-all border-radius-5"
+                        >
+                          <h5 class="text-white margin-20px-bottom text-center">
+                            Just steps from your home
+                          </h5>
+                          <p
+                            class="text-white text-center font-size14 margin-30px-bottom"
+                          >
+                            Leave us your information
+                          </p>
+                          <form id="contactForm1" class="contact-form">
+                            <div
+                              id="formMessage1"
+                              class="alert"
+                              style="display: none; margin-bottom: 20px"
+                            ></div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="text"
+                                name="name"
+                                id="name1"
+                                class="form-control"
+                                placeholder="Name:"
+                                required
+                              />
+                            </div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="text"
+                                name="lastName"
+                                id="lastName1"
+                                class="form-control"
+                                placeholder="Last name:"
+                                required
+                              />
+                            </div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="email"
+                                name="email"
+                                id="email1"
+                                class="form-control"
+                                placeholder="Mail:"
+                                required
+                              />
+                            </div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="tel"
+                                name="phone"
+                                id="phone1"
+                                class="form-control"
+                                placeholder="Phone:"
+                                required
+                              />
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group margin-20px-bottom">
+                                  <input
+                                    type="text"
+                                    name="country"
+                                    id="country1"
+                                    class="form-control"
+                                    placeholder="Country:"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group margin-20px-bottom">
+                                  <input
+                                    type="text"
+                                    name="state"
+                                    id="state1"
+                                    class="form-control"
+                                    placeholder="State:"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <p class="text-white font-size12 line-height-22">
+                              This information will only be used to contact you
+                              and follow up on your request for your future
+                              residence in Cabo San Lucas beach.
+                            </p>
+                            <button type="submit" class="butn theme width-100">
+                              <span
+                                >Send
+                                <i
+                                  class="fas fa-check-circle margin-5px-left"
+                                ></i
+                              ></span>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -382,6 +332,106 @@
                           <a href="#solance-residences" class="butn theme">
                             <span>View Properties</span>
                           </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 offset-lg-1 col-md-6">
+                        <div
+                          class="bg-black-opacity-light padding-40px-all border-radius-5"
+                        >
+                          <h5 class="text-white margin-20px-bottom text-center">
+                            Just steps from your home
+                          </h5>
+                          <p
+                            class="text-white text-center font-size14 margin-30px-bottom"
+                          >
+                            Leave us your information
+                          </p>
+                          <form id="contactForm2" class="contact-form">
+                            <div
+                              id="formMessage2"
+                              class="alert"
+                              style="display: none; margin-bottom: 20px"
+                            ></div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="text"
+                                name="name"
+                                id="name2"
+                                class="form-control"
+                                placeholder="Name:"
+                                required
+                              />
+                            </div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="text"
+                                name="lastName"
+                                id="lastName2"
+                                class="form-control"
+                                placeholder="Last name:"
+                                required
+                              />
+                            </div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="email"
+                                name="email"
+                                id="email2"
+                                class="form-control"
+                                placeholder="Mail:"
+                                required
+                              />
+                            </div>
+                            <div class="form-group margin-20px-bottom">
+                              <input
+                                type="tel"
+                                name="phone"
+                                id="phone2"
+                                class="form-control"
+                                placeholder="Phone:"
+                                required
+                              />
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group margin-20px-bottom">
+                                  <input
+                                    type="text"
+                                    name="country"
+                                    id="country2"
+                                    class="form-control"
+                                    placeholder="Country:"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group margin-20px-bottom">
+                                  <input
+                                    type="text"
+                                    name="state"
+                                    id="state2"
+                                    class="form-control"
+                                    placeholder="State:"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <p class="text-white font-size12 line-height-22">
+                              This information will only be used to contact you
+                              and follow up on your request for your future
+                              residence in Cabo San Lucas beach.
+                            </p>
+                            <button type="submit" class="butn theme width-100">
+                              <span
+                                >Send
+                                <i
+                                  class="fas fa-check-circle margin-5px-left"
+                                ></i
+                              ></span>
+                            </button>
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -1022,11 +1072,14 @@
     <!-- Contact form handler -->
     <script>
       $(document).ready(function () {
-        // Manejar el formulario único
-        $("#contactForm").on("submit", function (e) {
+        // Manejar ambos formularios
+        $("#contactForm1, #contactForm2").on("submit", function (e) {
           e.preventDefault();
 
-          const messageDiv = $("#formMessage");
+          const formId = $(this).attr("id");
+          const messageDiv = $(
+            "#formMessage" + formId.replace("contactForm", "")
+          );
           const submitButton = $(this).find('button[type="submit"]');
           const originalButtonText = submitButton.html();
 
@@ -1062,7 +1115,7 @@
                   .text(response.message)
                   .fadeIn();
                 // Limpiar formulario
-                $("#contactForm").trigger("reset");
+                $("#" + formId).trigger("reset");
                 // Ocultar mensaje después de 5 segundos
                 setTimeout(function () {
                   messageDiv.fadeOut();
